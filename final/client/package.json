@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.4.6",
+    "@apollo/client": "3.4.6",
     "@reach/router": "^1.2.1",
     "@types/node": "^12.12.14",
     "@types/reach__router": "^1.2.6",
@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --collectCoverageFrom=src/*/.{js,jsx,ts,tsx} --collectCoverageFrom=!src/index.{js,jsx,ts,tsx} --collectCoverageFrom=!src/cache.{js,jsx,ts,tsx}",
     "eject": "react-scripts eject",
     "run:ios-demo": "npx artillery run apollo-internal-demos/ios-workload.yml",
     "codegen": "apollo client:codegen --target typescript --watch"
